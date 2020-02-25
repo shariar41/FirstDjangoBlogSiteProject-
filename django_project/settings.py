@@ -25,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'axp!v!hi$+ac2rdr$q)rry%5qc=_hqoojyax%)hixhm(+ghk%u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #helpful in developing
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []#the hostname djangoblogapp1.herokuapp.com
 
 
 # Application definition
@@ -122,7 +122,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')#require to deploy
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')#require to deploy
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #MEDIA_ROOT is the directory(here 'media') where the uploaded files are saved.Base directory will be now in media where the profile_pics folder will be located

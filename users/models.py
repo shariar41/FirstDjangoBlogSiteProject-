@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import  User
+from django.contrib.auth.models import User
 from PIL import Image #import image from pillow libarary
 
 
@@ -10,8 +10,8 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)#run the method of our parent class
+    def save(self):#, *args, **kwargs):
+        super().save()#*args, **kwargs)#run the method of our parent class
 
         img = Image.open(self.image.path)#create an instance of original image
 
